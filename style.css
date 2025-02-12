@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+:root{
+    --cor-primaria: #fff;
+    --cor-secundaria: #1d1c1c;
+    --cor-terciaria: #ec8531;
+    --cor-pizza:#d8d8d8;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+header{
+    background-color: var(--cor-secundaria);
+    padding: 1.5% 0.10rem;
+    text-align: center;
+}
+.navegar{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    margin: 0 1rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1{
+    font-family: "Trirong",serif;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.hero__image{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero__foreground{
+    padding-top: 4vh;
+    text-align: center;
+}
+
+.button{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 0.4rem 1.5rem;
+    border-radius: 16px;
+    margin: 1rem;
+}
+
+.section{
+    text-align: center;
+    color: #000;
+    margin: 7rem 4rem;
+}
+
+.section__pizza{
+    display: inline-block;
+    max-width: 20rem;
+    justify-content: center;
+    text-decoration: none;
+    text-align: left;
+    background-color: var(--cor-pizza);
+    border-radius: 16px ;
+    margin: 1rem 2rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+.section__pizza__image{
+    object-fit: cover;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    height: 16rem;
+    width: 100%;
+}
+.section__pizza__titulo{
+    font-size: 1.125rem;
+    margin: 1rem 1rem 0rem;
+}
+.section__pizza__texto{
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.section__sobre-nos{
+    background: linear-gradient(rgba(0,0,0,0.2),#000000);
+    color: var(--cor-primaria);
+    position: relative;
+}
+
+.section__sobre-nos h2{
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+.section__sobre-nos__text{
+    text-align: center;
+    padding: 3.57rem;
+}
+
+.section__image{
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 11rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.section__title{
+    margin: 2rem;
+    font-size: 2.125rem;
+    font-weight: 300;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.informacoes{
+    display: flex;
+    text-align: left;
+    gap: 3rem;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+.email{
+    color:var(--cor-terciaria)
+}
+
+.cards{
+    text-align: center;
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 3rem ;
+    color:var(--cor-terciaria)
+}
+
+@media(max-width:700px){
+    .hero h1{
+        font-size: 1.6rem;
+    }
+
+    .section{
+        margin:5rem 1rem
+    }
+    
+    .section__pizza__image{
+        height: 8rem;
+        width: 100%;
+    }
+    .section__pizza{
+        justify-content: 0;
+        margin: 1rem 1rem;
+        max-width: 10rem;
+    }
+    .informacoes{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 555px){
+    .section__sobre-nos__text{
+        padding: 2.4rem;
+    }
+}
+
+@media (max-width:420px){
+    header{
+        font-size: 0.7rem;
+    }
+}
