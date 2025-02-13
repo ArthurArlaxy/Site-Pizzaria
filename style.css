@@ -206,4 +206,7 @@ footer{
     header{
         font-size: 0.7rem;
     }
+    button{
+        font-size: 0.5rem
+    }
 }
